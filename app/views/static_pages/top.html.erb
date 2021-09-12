@@ -1,78 +1,105 @@
-<!DOCTYPE html>
-<html lang="ja">
- <head>
- <meta charset="utf-8">
- <title>サイトタイトル</title>
- <meta name="description" content="ディスクリプションを入力">
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <link rel="stylesheet" href="style.css">
- <!-- [if lt IE 9] -->
- <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
- <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
- <!-- [endif] -->
- <script src="main.js"></script>
- </head>
- <body>
- <!----- header----->
- <header>ヘッダー</header>
- <nav>ナビ</nav>
- <!----- /header ----->
- 
- <!----- main ----->
- <article>
- <h1>山田太郎</h1>
- <section>
- <h2>大洲中学校3年</h2>
+ <div class="user">
+    <div class="user-name">
+        <p>山田太郎</p>
+    </div>
+    <div class="user-belong">
+        <p>大洲中学校3年</p>
+    </div>
+    <div class="user-progress">
+        <p>75%</p>
+        <p>section2</p>
+    </div>
+</div>
 
- <div>75%</div>
- <div>section2</div>
+<div class="detail">
+    <div>
+        <p>all:10%</p>
+        <p>rank:10/50</p>
+    </div>
 
- <div>all:10%</div>
- <div>rank:10/50</div>
+    <div class="next-test">
+        <div class="next-test-range">
+            <p>次のテスト範囲</p>
+            <p>1100〜1150</p>
+        </div>
+        <div class="next-test-deadline">
+            <p>あと6日</p>
+        </div>
+    </div>
 
- <div>次のテスト範囲</div>
- <div>1100〜1150</div>
-
- <div>あと６日</div>
-
- <div>全体の進捗</div>
- <div>
-    <div>section１</div>
-    <a>rank:2/50</a>
-    <a>Average:33.4%</a>
-    <a>75%</a>
- </div>
- <div>
-    <a>section２</a>
-    <a>rank:2/50</a>
-    <a>Average:33.4%</a>
-    <a>75%</a>
- </div>
- <div>
-    <a>section３</a>
-    <a>rank:2/50</a>
-    <a>Average:33.4%</a>
-    <a>75%</a>
- </div>
- <div>
-    <a>section４</a>
-    <a>rank:2/50</a>
-    <a>Average:33.4%</a>
-    <a>75%</a>
- </div>
- <div>
-    <a>section５</a>
-    <a>rank:2/50</a>
-    <a>Average:33.4%</a>
-    <a>75%</a>
- </div>
-
- </section>
- </article>
- <!----- /main ----->
- 
- <!----- footer ----->
- <footer>フッター</footer>
- <!----- /footer ----->
- </body>
-</html>
+    <div>　<!--クラス名を"progress"にするとcssが適用される-->
+        <h1>全体の進捗</h1>
+        <ul>
+            <li>
+                <div class="section-name">
+                    <p>section１</p>
+                </div>
+                <div class="section-rank">
+                    <p>rank:2/50</p>
+                </div>
+                <div class="section-average">
+                    <p>Average:33.4%</p>
+                </div>
+                <div class="section-progress">
+                    <p>75%</p>
+                </div>
+            </li>
+            <li>
+                <div class="section-name">
+                    <p>section2</p>
+                </div>
+                <div class="section-rank">
+                    <p>rank:2/50</p>
+                </div>
+                <div class="section-average">
+                    <p>Average:33.4%</p>
+                </div>
+                <div class="section-progress">
+                    <p>75%</p>
+                </div>
+            </li>
+            <li>
+                <div class="section-name">
+                    <p>section3</p>
+                </div>
+                <div class="section-rank">
+                    <p>rank:2/50</p>
+                </div>
+                <div class="section-average">
+                    <p>Average:33.4%</p>
+                </div>
+                <div class="section-progress">
+                    <p>75%</p>
+                </div>
+            </li>
+            <li>
+                <div class="section-name">
+                    <p>section4</p>
+                </div>
+                <div class="section-rank">
+                    <p>rank:2/50</p>
+                </div>
+                <div class="section-average">
+                    <p>Average:33.4%</p>
+                </div>
+                <div class="section-progress">
+                    <p>75%</p>
+                </div>
+            </li>
+            <li>
+                <div class="section-name">
+                    <p>section5</p>
+                </div>
+                <div class="section-rank">
+                    <p>rank:2/50</p>
+                </div>
+                <div class="section-average">
+                    <p>Average:33.4%</p>
+                </div>
+                <div class="section-progress">
+                    <p>75%</p>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
