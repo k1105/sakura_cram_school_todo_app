@@ -13,3 +13,10 @@
  *= require_tree .
  *= require_self
  */
+
+:root {
+  --main-col: #04a7ff;
+  --sub-col: #64cafd;
+  --white-col: #f9f9f9;
+  --black-col: #2b2627;
+}
