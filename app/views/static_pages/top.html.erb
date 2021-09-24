@@ -24,46 +24,16 @@
     <div class="section">　<!--クラス名を"progress"にするとcssが適用される-->
         <h1>全体の進捗</h1>
         <ul>
-            <li>
-                <div class="section-status">
-                    <p>section1</p>
-                    <p>rank:2/50</p>
-                    <p>Average:33.4%</p>
-                    <p>75%</p>
-                </div>
-            </li>
-            <li>
-                <div class="section-status">
-                    <p>section2</p>
-                    <p>rank:2/50</p>
-                    <p>Average:33.4%</p>
-                    <p>75%</p>
-                </div>
-            </li>
-            <li>
-                <div class="section-status">
-                    <p>section3</p>
-                    <p>rank:2/50</p>
-                    <p>Average:33.4%</p>
-                    <p>75%</p>
-                </div>
-            </li>
-            <li>
-                <div class="section-status">
-                    <p>section4</p>
-                    <p>rank:2/50</p>
-                    <p>Average:33.4%</p>
-                    <p>75%</p>
-                </div>
-            </li>
-            <li>
-                <div class="section-status">
-                    <p>section5</p>
-                    <p>rank:2/50</p>
-                    <p>Average:33.4%</p>
-                    <p>75%</p>
-                </div>
-            </li>
+            <% for i in 1..5 do %>
+                <li>
+                    <div class="section-status">
+                        <p>section<%=i%></p>
+                        <p>rank:2/50</p>
+                        <p>Average:33.4%</p>
+                        <p>75%</p>
+                    </div>
+                </li>  
+            <% end %>
         </ul>
     </div>
 </div>
