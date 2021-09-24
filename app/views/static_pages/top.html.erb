@@ -1,63 +1,71 @@
- <div class="user">
-    <div class="user-profile">
-        <p>
-            <%= @user %>
-        </p>
-        <p>
-            <%= @user_belong %><%= @user_grade %>年
-        </p>
-    </div>
-    <div class="user-progress">
-        <p>
-            <%= @user_progress[0] %>%
-        </p>
-        <p>
-            section<%= @user_progress_section[0] %>
-        </p>
-    </div>
-</div>
-
-<div class="detail">
-    <div>
-        <p>
-            all:<%=  @user_progress_all %>%
-        </p>
-        <p>
-            rank:<%=  @user_rank_all %>/<%=  @all_user_number %>
-        </p>
-    </div>
-
-    <div class="next-test">    
-        <p>次のテスト範囲</p>
-        <p>
-            <%= @next_test_range_head %>〜<%= @next_test_range_tail %>
-        </p>
-        <p>
-            あと<%=  @next_test_limit %>日
-        </p>    
-    </div>
-
-    <div class="section">　<!--クラス名を"progress"にするとcssが適用される-->
-        <h1>全体の進捗</h1>
-        <ul>
-            <% for i in 1..5 do %>
-                <li>
-                    <div class="section-status">
-                        <p>
-                            section<%=i%>
-                        </p>
-                        <p>
-                            rank:<%=  @user_rank[i-1] %>/<%=  @all_user_number %>
-                        </p>
-                        <p>
-                            Average:<%=  @user_average[i-1] %>%
-                        </p>
-                        <p>
-                            <%= @user_progress[i-1] %>%
-                        </p>
+<div class="page-content container">
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="user">
+                <div class="user-profile">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <p class="user-name">
+                                <%= @user %>
+                            </p>
+                            <p>
+                                <%= @user_belong %><%= @user_grade %>年
+                            </p>
+                        </div>
                     </div>
-                </li>  
-            <% end %>
-        </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="user-progress">
+                <p class="user-progress-percent">
+                    <%= @user_progress[0] %>%
+                </p>
+                <p class="user-progress-section">
+                    section<%= @user_progress_section[0] %>
+                </p>
+            </div>
+            <div>
+                <p class="progress-all">
+                    <span>all:<%=  @user_progress_all %>%</span> 
+                    <span>rank:<%=  @user_rank_all %>/<%=  @all_user_number %></span>
+                </p>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="container detail">
+                <div class="row">
+                    <div class="next-test">    
+                        <h1 class="headline">次のテスト範囲</h1>
+                        <p class="next-test-range">
+                            <%= @next_test_range_head %>〜<%= @next_test_range_tail %>
+                        </p>
+                        <p class="next-test-deadline">
+                            あと<%=  @next_test_limit %>日
+                        </p>    
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <h1 class="headline">全体の進捗</h1>
+                    </div>
+                    <% for i in 1..5 do %>
+                        <div class="col-8">
+                            <p class="section-name">
+                                section<%=i%>
+                            </p>
+                            <p>
+                                rank:<%=  @user_rank[i-1] %>/<%=  @all_user_number %>    Average:<%=  @user_average[i-1] %>%
+                            </p>
+                        </div>
+                        <div class="col-4">
+                            <p class="section-progress">
+                                <%= @user_progress[i-1] %>%
+                            </p>
+                        </div>
+                    <% end %>
+                </div>
+            </div>
+        </div>
     </div>
 </div>

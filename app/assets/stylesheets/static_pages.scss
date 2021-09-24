@@ -1,6 +1,67 @@
 // Place all the styles related to the StaticPages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
-.section {
+
+.headline {
+  font-size: 1.5em;
+}
+
+.page-content {
+  margin-top: 30px;
+}
+
+.progress-all {
+  text-align: center;
+}
+
+.detail {
   background-color: var(--white-col);
+  padding-top: 30px;
+  border-radius: 10px;
+}
+
+.user-name {
+  font-size: 1.5em;
+  margin-bottom: 0%;
+}
+
+.next-test {
+  text-align: center;
+}
+
+.next-test-range {
+  font-size: 2em;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+
+.next-test-deadline {
+  font-size: 1.5em;
+  font-weight: 700;
+}
+
+.user-progress {
+  text-align: center;
+}
+
+.user-progress-percent {
+  font-size: 3em;
+  font-weight: 800;
+  margin-bottom: 0;
+}
+
+.user-progress-section {
+  font-size: 1.5em;
+  font-weight: 700;
+}
+
+.section-name {
+  font-size: 1.5em;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+
+.section-progress {
+  font-size: 2em;
+  font-weight: 700;
 }
