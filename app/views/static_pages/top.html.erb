@@ -17,16 +17,18 @@
             </div>
         </div>
         <div class="col-sm-6">
-            <div class="user-progress">
-                <p class="user-progress-percent">
-                    <%= @user_progress[0] %>%
-                </p>
-                <p class="user-progress-section">
-                    section<%= @user_progress_section[0] %>
-                </p>
+            <div class="pie user-progress">
+                <div>
+                    <p class="user-progress-percent">
+                        <%= @user_progress[0] %>%
+                    </p>
+                    <p class="user-progress-section">
+                        section<%= @user_progress_section[0] %>
+                    </p>
+                </div>
             </div>
             <div>
-                <p class="progress-all">
+                <p class="progress-all text-center">
                     <span>all:<%=  @user_progress_all %>%</span> 
                     <span>rank:<%=  @user_rank_all %>/<%=  @all_user_number %></span>
                 </p>
@@ -35,7 +37,7 @@
         <div class="col-sm-6">
             <div class="container detail">
                 <div class="row">
-                    <div class="next-test">    
+                    <div class="next-test text-center">    
                         <h1 class="headline">次のテスト範囲</h1>
                         <p class="next-test-range">
                             <%= @next_test_range_head %>〜<%= @next_test_range_tail %>

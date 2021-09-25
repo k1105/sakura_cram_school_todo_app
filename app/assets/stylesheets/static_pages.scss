@@ -2,16 +2,30 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
 
+.pie {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: auto;
+  margin-left: auto;
+  width: 220px;
+  height: 220px;
+  background-image: radial-gradient(var(--white-col) 55%, transparent 0%),
+    conic-gradient(var(--main-col) 0% 75%, var(--sub-col) 75% 100%);
+  border-radius: 50%;
+}
+
+.small {
+  width: 100px;
+  height: 100px;
+}
+
 .headline {
   font-size: 1.5em;
 }
 
 .page-content {
   margin-top: 30px;
-}
-
-.progress-all {
-  text-align: center;
 }
 
 .detail {
@@ -25,10 +39,6 @@
   margin-bottom: 0%;
 }
 
-.next-test {
-  text-align: center;
-}
-
 .next-test-range {
   font-size: 2em;
   font-weight: 700;
@@ -36,18 +46,17 @@
 }
 
 .next-test-deadline {
-  font-size: 1.5em;
   font-weight: 700;
 }
 
 .user-progress {
-  text-align: center;
+  margin-bottom: 30px;
 }
 
 .user-progress-percent {
   font-size: 3em;
   font-weight: 800;
-  margin-bottom: 0;
+  margin-bottom: -10px;
 }
 
 .user-progress-section {
